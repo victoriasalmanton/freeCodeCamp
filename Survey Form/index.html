@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></input></label> 
+     <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required></input></label> 
+     <label id="number-label" for="age">Age (optional) <input id="number" type="number" placeholder="Age" min="15" max="99"></input></label> 
+     <label for="dropdown">Wich option best describes your current role <select id="dropdown"placeholder="Select current role">
+       <option value="">select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time Job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+       </select></label> 
+       <label for="definitely">Would you recommend freeCodeCamp to a friend?</label>
+       <label for="definetly"><input id="definetly" type="radio" class="inline" value="1" name="recommend" checked/>Definetly</label>
+
+       <label for="Maybe"><input id="Maybe" type="radio" class="inline" value="2" name="recommend"/> Maybe</label>
+       <label for="Not sure"><input id="Not sure" type="radio" class="inline" value="2" name="recommend"/>Not sure</label>
+       <label for="definitely">What is your favorite feature of freeCodeCamp?</label>
+        <label for="feature1"><input id="feature1" type="checkbox" class="inline" value="1" name="feature" checked/>Front-end proyects</label>
+        <label for="feature"><input id="feature" type="checkbox" class="inline" value="1" name="feature"/>Back-end proyects</label>
+        <label for="bio">Any comments or suggestions?<textarea id="bio" name="bio" rows="4" cols="40" placeholder="Enter your comments here..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="submit">
+     </form>
+</body>
+</html>
